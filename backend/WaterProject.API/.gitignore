@@ -11,6 +11,8 @@ obj/
 *.pdb
 *.log
 *.tlog
+*.sln.docstates
+*.Dotsettings.user
 
 # Ignore Node.js dependencies
 node_modules/
