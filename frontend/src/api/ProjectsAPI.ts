@@ -6,7 +6,7 @@ interface FetchProjectsResponse {
 }
 
 // const API_URL = 'https://localhost:5000/Water';
-const API_URL = 'https://waterproject-metler-backend.azurewebsites.net/Water';
+const API_URL = 'https://waterproject-metler-backend.azurewebsites.net/water';
 
 export const fetchProjects = async (
   pageSize: number,
@@ -19,7 +19,7 @@ export const fetchProjects = async (
       .join('&');
 
     const response = await fetch(
-      `${API_URL}/AllProjects?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`
+      `${API_URL}/allprojects?pageSize=${pageSize}&pageNum=${pageNum}${selectedCategories.length ? `&${categoryParams}` : ''}`
     );
 
     if (!response.ok) {
