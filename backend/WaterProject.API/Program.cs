@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowReactAppBlah", 
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
+            policy.WithOrigins("http://localhost:3000", "https://yellow-pond-0f0689b1e.6.azurestaticapps.net")
                 .AllowAnyMethod()
                 .AllowAnyHeader();
         }));
